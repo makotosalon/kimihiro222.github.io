@@ -1,6 +1,31 @@
-h1 {
-  color: red;
-  &:hover {
-    color: green;
-  }
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.0rem;
+}
+li {
+	list-style: none;
+}
+
+#wrapper {
+	max-width: 1200px;
+	padding: 40px;
+	@media screen and (max-width:414px) {
+		padding: 20px;
+	}
+}
+header {
+	h1 {
+		font-size: 1.6rem;
+	}
+}
+main {
+	margin-top: 30px;
+	.skill {
+		margin-top: 30px;
+		ul li {
+			margin-top: 10px;
+		}
+	}
 }
