@@ -1,14 +1,19 @@
-var gulp = require("gulp");
+var gulp = require('gulp');
 var sass = require("gulp-sass");
-var browser = require("browser-sync");
+var browserSync = require('browser-sync').create();
 
 //自動リロード
-gulp.task("server", function() {
-	browser({
+gulp.task('browser-sync', function() {
+	browserSync.init({
 		server: {
 			baseDir: "./"
 		}
 	});
+});
+
+//ブラウザリロード
+gulp.task('bs-reload', function () {
+	browserSync.reload();
 });
 
 //sassコンパイル
@@ -19,7 +24,10 @@ gulp.task("sass", function() {
 		.pipe(browser.reload({stream:true}))
 });
 
-//自動タスク
-gulp.task("default",['server'], function() {
-	gulp.watch('./sass/**/*.scss',['sass'])
+
+//ファイル監視
+gulp.task('default', ['browser-sync'], function () {
+	gulp.watch("./**/*.scss", ['sass']);
+	gulp.watch("./**/*.css", ['bs-reload']);
+	gulp.watch("./**/*.html", ['bs-reload']);
 });
