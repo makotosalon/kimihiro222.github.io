@@ -136,8 +136,11 @@ table {
     background: #737373; }
 
 /*contact*/
-.sns {
+.contact .sns {
   margin-top: 20px; }
+
+.contact a {
+  color: #70aae6; }
 
 /*-----------------------------------------
 	leftコンテンツ
