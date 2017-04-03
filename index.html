@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
 
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,6 +22,7 @@
 <body>
 
 <div id="wrapper">
+	<!--ナビゲーション-->
 	<nav>
 		<ul>
 			<li data-menuanchor="first" class="active"><a href="#first">ABOUT</a></li>
@@ -28,32 +30,106 @@
 			<li data-menuanchor="third"><a href="#third">CONTACT</a></li>
 		</ul>
 	</nav>
+
+	<!--マルチスクロール-->
 	<div id="multiscroll">
+		<!--leftコンテンツ-->
 		<div class="ms-left">
 			<div class="ms-section lead">ABOUT</div>
-			<div class="ms-section contents">coming soon...</div>
+
+			<!--works-->
+			<div class="ms-section contents works">
+				<section>
+					<article>
+						<h3><a href="http://animecharadb.jp/?lang=jp" target="_blank">Anime Chara DB</a></h3>
+						<p><span>担当：</span>コーディング・デザイン</p>
+						<div class="worksImage"><a href="http://animecharadb.jp/?lang=jp" target="_blank"><img src="images/worksImg_01.jpg" alt="Anime Chara DB"></a></div>
+					</article>
+					<article>
+						<h3><a href="http://shoten.kadokawa.co.jp/sp/mangagakushu/" target="_blank">角川まんが学習シリーズ</a></h3>
+						<p><span>担当：</span>コーディング・デザイン</p>
+						<div class="worksImage"><a href="http://shoten.kadokawa.co.jp/sp/mangagakushu/" target="_blank"><img src="images/worksImg_02.jpg" alt="角川まんが学習シリーズ"></a></div>
+					</article>
+					<article>
+						<h3><a href="https://rt-trend.jp/tsuiranpro/" target="_blank">ついランPro</a></h3>
+						<p><span>担当：</span>コーディング・デザイン</p>
+						<div class="worksImage"><a href="https://rt-trend.jp/tsuiranpro/" target="_blank"><img src="images/worksImg_03.jpg" alt="ついランPro"></a></div>
+					</article>
+					<article>
+						<h3><a href="http://shoten.kadokawa.co.jp/sp/ashitanoshokutaku/" target="_blank">『明日の食卓』椰月美智子<br>特設サイト</a></h3>
+						<p><span>担当：</span>コーディング</p>
+						<div class="worksImage"><a href="http://shoten.kadokawa.co.jp/sp/ashitanoshokutaku/" target="_blank"><img src="images/worksImg_04.jpg" alt="『明日の食卓』椰月美智子 特設サイト"></a></div>
+					</article>
+					<article>
+						<h3><a href="http://sp.walkerplus.com/tokutabi_hokkaido/shukuhaku.html" target="_blank">「トク旅北海道」<br>2016年キャンペーン</a></h3>
+						<p><span>担当：</span>コーディング・デザイン</p>
+						<div class="worksImage"><a href="http://sp.walkerplus.com/tokutabi_hokkaido/shukuhaku.html" target="_blank"><img src="images/worksImg_05.jpg" alt="「トク旅北海道」2016年キャンペーン"></a></div>
+					</article>
+					<article>
+						<h3><a href="http://japancontentcatalog.jp/" target="_blank">Japan Content Catalog</a></h3>
+						<p><span>担当：</span>コーディング（スマホのみ）</p>
+						<div class="worksImage"><a href="http://japancontentcatalog.jp/" target="_blank"><img src="images/worksImg_06.jpg" alt="Japan Content Catalog"></a></div>
+					</article>
+				</section>
+			</div>
 			<div class="ms-section lead">CONTACT</div>
 		</div>
+
+		<!--rightコンテンツ-->
 		<div class="ms-right">
-			<div class="ms-section contents">
-				<p>私の名前はKimihiroです。フロントエンジニアをしています。</p>
+			<!--about-->
+			<div class="ms-section contents about">
+				<div class="myImage"><img src="images/myImage.jpg" alt="oono"></div>
 				<table>
 					<tr>
-						<th>name</th>
+						<th>Name</th>
 						<td>Kimihiro Ohno</td>
 					</tr>
 					<tr>
-						<th>age</th>
-						<td>secret</td>
+						<th>Age</th>
+						<td>25</td>
 					</tr>
 					<tr>
-						<th>gender</th>
-						<td>secret</td>
+						<th>Birth</th>
+						<td>1991.09.25</td>
 					</tr>
 				</table>
+
+				<!--スキル-->
+				<div class="skill">
+					<h2>Skill</h2>
+					<dl class="html5">
+						<dt>HTML5</dt>
+						<dd><span data-num="75"></span></dd>
+					</dl>
+					<dl class="css3">
+						<dt>CSS3</dt>
+						<dd><span data-num="60"></span></dd>
+					</dl>
+					<dl class="javascript">
+						<dt>javascript</dt>
+						<dd><span data-num="30"></span></dd>
+					</dl>
+					<dl class="php">
+						<dt>PHP</dt>
+						<dd><span data-num="10"></span></dd>
+					</dl>
+				</div>
 			</div>
 			<div class="ms-section lead">WORKS</div>
-			<div class="ms-section contents">coming soon...</div>
+
+			<!--contact-->
+			<div class="ms-section contents contact">
+				<table>
+					<tr>
+						<th>Mail</th>
+						<td>kimihiro.add@gmail.com</td>
+					</tr>
+				</table>
+				<div class="sns">
+					<div class="fb"><a href="https://www.facebook.com/profile.php?id=100002282900973" target="_blank"><img src="images/fb.png" alt="facebook" width="25"></a></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div><!--wrapper-->
@@ -61,6 +137,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/jquery.multiscroll.min.js"></script>
 <script src="js/jquery.easings.min.js"></script>
+<script src="js/main.js"></script>
 <script>
 //マルチスクリプト
 $(document).ready(function() {
