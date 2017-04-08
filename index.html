@@ -148,6 +148,13 @@ $(document).ready(function() {
 		paddingBottom: 0 // 固定フッター分の下paddingを取ることが出来ます。
 	});
 });
+
+//UAスマホ切り替え
+if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+	location.href = './sp.html';
+}
+
+
 </script>
 
 </body>
