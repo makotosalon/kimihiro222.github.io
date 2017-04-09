@@ -208,9 +208,16 @@ table {
 .contact {
 	.sns {
 		margin-top: 20px;
+		div {
+			margin-bottom: 10px;
+		}
 	}
 	a {
 		color: #70aae6;
+		img {
+		vertical-align: middle;
+		margin-right: 10px;
+		}
 	}
 }
 

@@ -165,9 +165,14 @@ table {
 /*contact*/
 .contact .sns {
   margin-top: 20px; }
+  .contact .sns div {
+    margin-bottom: 10px; }
 
 .contact a {
   color: #70aae6; }
+  .contact a img {
+    vertical-align: middle;
+    margin-right: 10px; }
 
 /*-----------------------------------------
 	leftコンテンツ
