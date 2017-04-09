@@ -169,6 +169,35 @@ table {
 		}
 
 	}
+	.skill2 {
+		margin-top: 30px;
+		h2 {
+			margin-bottom: 10px;
+			font-size: 1.4rem;
+		}
+		.skillBox {
+			width: calc(100% - 80px);
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px;
+			border: solid 1px #ababab;
+			&:nth-child(2) {
+				margin-top: 20px;
+				height: 150px;
+			}
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				li {
+					background: #2f69e9;
+					padding: 5px;
+					margin: 5px;
+					color: #fff;
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
 }
 
 /*contact*/

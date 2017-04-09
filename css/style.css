@@ -135,6 +135,30 @@ table {
   .about .skill .wordpress dd span {
     background: #737373; }
 
+.about .skill2 {
+  margin-top: 30px; }
+  .about .skill2 h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem; }
+  .about .skill2 .skillBox {
+    width: calc(100% - 80px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: solid 1px #ababab; }
+    .about .skill2 .skillBox:nth-child(2) {
+      margin-top: 20px;
+      height: 150px; }
+    .about .skill2 .skillBox ul {
+      display: flex;
+      flex-wrap: wrap; }
+      .about .skill2 .skillBox ul li {
+        background: #2f69e9;
+        padding: 5px;
+        margin: 5px;
+        color: #fff;
+        font-size: 1.4rem; }
+
 /*contact*/
 .contact .sns {
   margin-top: 20px; }

@@ -96,7 +96,7 @@
 				</table>
 
 				<!--スキル-->
-				<div class="skill">
+				<!--div class="skill">
 					<h2>Skill</h2>
 					<dl class="html5">
 						<dt>HTML5</dt>
@@ -114,6 +114,32 @@
 						<dt>PHP</dt>
 						<dd><span data-num="10"></span></dd>
 					</dl>
+				</div-->
+
+				<div class="skill2">
+					<div class="skillBox">
+						<h2>使用したことがある</h2>
+						<ul>
+							<li>HTML5
+							<li>CSS3
+							<li>JavaScript
+							<li>jQuery
+							<li>PHP
+							<li>git
+							<li>WordPress
+							<li>MySQL
+							<li>Swift
+							<li>SCSS
+							<li>Gulp
+							<li>Bootstrap
+							<li>UNIX
+							<li>Photoshop
+							<li>Illustrator
+						</ul>
+					</div>
+					<div class="skillBox">
+						<h2>頻繁に使う</h2>
+					</div>
 				</div>
 			</div>
 			<div class="ms-section lead">WORKS</div>
@@ -138,6 +164,7 @@
 <script src="js/jquery.multiscroll.min.js"></script>
 <script src="js/jquery.easings.min.js"></script>
 <script src="js/main.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 <script>
 //マルチスクリプト
 $(document).ready(function() {
@@ -154,7 +181,10 @@ if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('i
 	location.href = './sp.html';
 }
 
-
+//ドラッグ&ドロップ
+$(function() {
+	$(".skill2 li").draggable();
+});
 </script>
 
 </body>
