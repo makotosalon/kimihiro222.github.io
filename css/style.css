@@ -140,6 +140,9 @@ table {
   .about .skill2 h2 {
     margin-bottom: 10px;
     font-size: 1.4rem; }
+    .about .skill2 h2 span {
+      font-size: 1.2rem;
+      color: #6f6f6f; }
   .about .skill2 .skillBox {
     width: calc(100% - 80px);
     margin-left: auto;
